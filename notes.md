@@ -31,4 +31,6 @@ Following the [smashing magazine tutorial](https://www.smashingmagazine.com/2014
 - In order to use the history API the permission of history must be added to the manifest
 - history API docs - https://developer.chrome.com/extensions/history
 - To get history items we use the search method which takes in a query object and a callback function
-- In order to get the 99 most recent items, pass in a query object of `{text: ''}`
+- In order to get the 100 most recent items, pass in a query object of `{text: ''}`
+- When defining and using a variable that is being set asynchronously, either use the variable inside the callback or return a promise as the variable and handle the promise when it resolves
+- each historyItem has an id, title, visitCount, lastVisitTime, typedCount, and url
